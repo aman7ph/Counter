@@ -1,3 +1,3 @@
 # Counter
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-usqege)
+my first incounter with react state

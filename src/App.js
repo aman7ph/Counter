@@ -1,6 +1,13 @@
 import React from 'react';
 import './style.css';
 
+function Count(props) {
+  return (
+    <div className="counter--count">
+      <h1>{props.track}</h1>
+    </div>
+  );
+}
 export default function App() {
   const [track, stateFun] = React.useState(0);
   function onClickAdd() {
@@ -16,9 +23,7 @@ export default function App() {
       <button className="counter--minus" onClick={onClickSub}>
         –
       </button>
-      <div className="counter--count">
-        <h1>{track}</h1>
-      </div>
+      <Count track={track} />
       <button className="counter--plus" onClick={onClickAdd}>
         +
       </button>
